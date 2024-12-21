@@ -29,3 +29,20 @@ echo "the price is \${$price} <br>";
 echo "you are employed: {$employed} <br>";
 echo "you are a student: {$student} <br>";
 echo "you are online: {$online} <br>";
+
+$name = "lealem";
+$food = "Pizza";
+$email = "fake@gmail.com";
+
+$age = 25;
+$users = 2;
+$quantity = 3;
+
+$employed = true;
+$student = false;
+$online = true;
+$total = null;
+
+echo "you have ordered {$quantity} x {$food}s <br>";
+$total = $price * $quantity;
+echo "your total is \${$total} <br>";
