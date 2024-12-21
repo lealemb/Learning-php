@@ -9,6 +9,7 @@ $phone = "123-456-7890";
 
 $gpa = 3.5;
 
+
 echo "Hello {$name} <br>";
 echo "you like {$food}";
 echo "your favorite color is {$color} <br>";
