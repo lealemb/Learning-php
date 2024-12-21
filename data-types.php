@@ -20,6 +20,7 @@ echo "your favorite color is {$color} <br>";
 
 echo "you are {$age} years old <br>";
 
+
 echo "your email is {$email} <br>";
 echo "your gpa is {$gpa} <br>";
 echo "your phone number is {$phone} <br>";
