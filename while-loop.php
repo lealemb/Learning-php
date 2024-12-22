@@ -20,7 +20,7 @@
 
 <?php
 $seconds = 0;
-$running = true;
+$running = false;
 
 while ($running) {
     if (isset($_POST['stop'])) {
