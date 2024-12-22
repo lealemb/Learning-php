@@ -24,10 +24,24 @@ if (isset($_POST["confirm"])) {
 
     $credit_card = null;
 
-
     if (isset($_POST["credit_card"])) {
         $credit_card = $_POST["credit_card"];
     }
+
+    switch ($credit_card) {
+        case "Visa":
+            echo "You have selected Visa";
+            break;
+        case "Master Card":
+            echo "You have selected Master Card";
+            break;
+        case "American Express":
+            echo "You have selected American Express";
+            break;
+        default:
+            echo "Please make a selection";
+    }
+    /*
     if ($credit_card == "Visa") {
         echo "You have selected Visa";
     } elseif ($credit_card == "Master Card") {
@@ -37,5 +51,6 @@ if (isset($_POST["confirm"])) {
     } else {
         echo "Please make a selection";
     }
+        */
 }
 ?>
