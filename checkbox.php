@@ -9,10 +9,10 @@
 
 <body>
     <form action="checkbox.php" method="post">
-        <input type="checkbox" name="pizza" value="pizza">Pizza<br>
-        <input type="checkbox" name="burger" value="burger">Burger<br>
-        <input type="checkbox" name="pasta" value="pasta">Pasta<br>
-        <input type="checkbox" name="fries" value="fries">Fries<br>
+        <input type="checkbox" name="foods[]" value="pizza">Pizza<br>
+        <input type="checkbox" name="foods[]" value="burger">Burger<br>
+        <input type="checkbox" name="foods[]" value="pasta">Pasta<br>
+        <input type="checkbox" name="foods[]" value="fries">Fries<br>
         <input type="submit" name="submit" value="submit">
 
     </form>
@@ -21,7 +21,15 @@
 </html>
 <?php
 if (isset($_POST["submit"])) {
-    if (isset($_POST["pizza"])) {
+
+    if (isset($_POST["foods"])) {
+        $foods = $_POST["foods"];
+        foreach ($foods as $food) {
+            echo $food . "<br>";
+        }
+    }
+
+    /*if (isset($_POST["pizza"])) {
         echo "You have selected pizza <br>";
     }
     if (isset($_POST["burger"])) {
@@ -46,6 +54,7 @@ if (isset($_POST["submit"])) {
     if (empty($_POST["fries"])) {
         echo "You Don't like fries <br>";
     }
+    */
 }
 
 ?>
