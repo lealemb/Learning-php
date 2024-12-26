@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$name = "John";
+$food = "Pizza";
+$color = "Red";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+$number = 5;
+$age = 25;
+$user = "John";
 
-<body>
-    Hello
-</body>
+$gpa = 3.5;
 
-</html>
+echo " Hello $name";
